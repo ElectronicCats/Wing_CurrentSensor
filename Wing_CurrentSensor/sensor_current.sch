@@ -1,0 +1,294 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:TL084 U1
+U 1 1 5FFCD8DB
+P 2080 1485
+F 0 "U1" H 2080 1118 50  0000 C CNN
+F 1 "TL084" H 2080 1209 50  0000 C CNN
+F 2 "" H 2030 1585 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 2130 1685 50  0001 C CNN
+	1    2080 1485
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL084 U1
+U 2 1 5FFCE9B9
+P 3785 1595
+F 0 "U1" H 3785 1228 50  0000 C CNN
+F 1 "TL084" H 3785 1319 50  0000 C CNN
+F 2 "" H 3735 1695 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 3835 1795 50  0001 C CNN
+	2    3785 1595
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5FFD458F
+P 1655 1880
+F 0 "R6" H 1714 1926 50  0000 L CNN
+F 1 "5K" H 1714 1835 50  0000 L CNN
+F 2 "" H 1655 1880 50  0001 C CNN
+F 3 "~" H 1655 1880 50  0001 C CNN
+	1    1655 1880
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5FFD49D3
+P 2570 1020
+F 0 "R3" V 2374 1020 50  0000 C CNN
+F 1 "10K" V 2465 1020 50  0000 C CNN
+F 2 "" H 2570 1020 50  0001 C CNN
+F 3 "~" H 2570 1020 50  0001 C CNN
+	1    2570 1020
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5FFD50BE
+P 2020 670
+F 0 "R1" V 1824 670 50  0000 C CNN
+F 1 "10K" V 1915 670 50  0000 C CNN
+F 2 "" H 2020 670 50  0001 C CNN
+F 3 "~" H 2020 670 50  0001 C CNN
+	1    2020 670 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5FFD534F
+P 3070 1020
+F 0 "R4" V 2874 1020 50  0000 C CNN
+F 1 "5K" V 2965 1020 50  0000 C CNN
+F 2 "" H 3070 1020 50  0001 C CNN
+F 3 "~" H 3070 1020 50  0001 C CNN
+	1    3070 1020
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5FFD5623
+P 1355 1020
+F 0 "R2" V 1159 1020 50  0000 C CNN
+F 1 "10K" V 1250 1020 50  0000 C CNN
+F 2 "" H 1355 1020 50  0001 C CNN
+F 3 "~" H 1355 1020 50  0001 C CNN
+	1    1355 1020
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 5FFD59F3
+P 3440 1945
+F 0 "R7" H 3499 1991 50  0000 L CNN
+F 1 "3.3K" H 3499 1900 50  0000 L CNN
+F 2 "" H 3440 1945 50  0001 C CNN
+F 3 "~" H 3440 1945 50  0001 C CNN
+	1    3440 1945
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5FFD5C89
+P 3660 1020
+F 0 "R5" V 3464 1020 50  0000 C CNN
+F 1 "10K" V 3555 1020 50  0000 C CNN
+F 2 "" H 3660 1020 50  0001 C CNN
+F 3 "~" H 3660 1020 50  0001 C CNN
+	1    3660 1020
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Small D2
+U 1 1 5FFD619F
+P 2800 1290
+F 0 "D2" V 2846 1220 50  0000 R CNN
+F 1 "D_Small" V 2755 1220 50  0000 R CNN
+F 2 "" V 2800 1290 50  0001 C CNN
+F 3 "~" V 2800 1290 50  0001 C CNN
+	1    2800 1290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D1
+U 1 1 5FFD674C
+P 2420 1290
+F 0 "D1" V 2374 1360 50  0000 L CNN
+F 1 "D_Small" V 2465 1360 50  0000 L CNN
+F 2 "" V 2420 1290 50  0001 C CNN
+F 3 "~" V 2420 1290 50  0001 C CNN
+	1    2420 1290
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5FFD6B5A
+P 3660 670
+F 0 "C1" V 3431 670 50  0000 C CNN
+F 1 "10uF" V 3522 670 50  0000 C CNN
+F 2 "" H 3660 670 50  0001 C CNN
+F 3 "~" H 3660 670 50  0001 C CNN
+	1    3660 670 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1780 1585 1655 1585
+Wire Wire Line
+	1655 1585 1655 1780
+Wire Wire Line
+	2670 1020 2800 1020
+Wire Wire Line
+	3560 670  3440 670 
+Wire Wire Line
+	2800 1190 2800 1020
+Connection ~ 2800 1020
+Wire Wire Line
+	2800 1020 2970 1020
+Wire Wire Line
+	2420 1390 2420 1485
+Wire Wire Line
+	2420 1485 2380 1485
+Wire Wire Line
+	2800 1390 2800 1485
+Wire Wire Line
+	2800 1485 2420 1485
+Connection ~ 2420 1485
+Wire Wire Line
+	1455 1020 1720 1020
+Wire Wire Line
+	1780 1385 1720 1385
+Wire Wire Line
+	1720 1385 1720 1145
+Connection ~ 1720 1020
+Wire Wire Line
+	1720 1020 2470 1020
+Wire Wire Line
+	3485 1495 3440 1495
+Wire Wire Line
+	3440 1495 3440 1020
+Connection ~ 3440 670 
+Wire Wire Line
+	3440 670  2120 670 
+Wire Wire Line
+	3170 1020 3440 1020
+Connection ~ 3440 1020
+Wire Wire Line
+	3440 1020 3440 670 
+Wire Wire Line
+	3440 1020 3560 1020
+Wire Wire Line
+	3440 1845 3440 1695
+Wire Wire Line
+	3440 1695 3485 1695
+Wire Wire Line
+	2420 1190 2420 1145
+Wire Wire Line
+	1720 1145 2420 1145
+Connection ~ 1720 1145
+Wire Wire Line
+	1720 1145 1720 1020
+$Comp
+L power:GND #PWR04
+U 1 1 5FFE1D3B
+P 3440 2160
+F 0 "#PWR04" H 3440 1910 50  0001 C CNN
+F 1 "GND" H 3445 1987 50  0000 C CNN
+F 2 "" H 3440 2160 50  0001 C CNN
+F 3 "" H 3440 2160 50  0001 C CNN
+	1    3440 2160
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5FFE2418
+P 1655 2160
+F 0 "#PWR03" H 1655 1910 50  0001 C CNN
+F 1 "GND" H 1660 1987 50  0000 C CNN
+F 2 "" H 1655 2160 50  0001 C CNN
+F 3 "" H 1655 2160 50  0001 C CNN
+	1    1655 2160
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1655 2160 1655 1980
+Wire Wire Line
+	3440 2045 3440 2160
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5FFE690D
+P 925 1710
+F 0 "J1" H 843 1385 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 843 1476 50  0000 C CNN
+F 2 "" H 925 1710 50  0001 C CNN
+F 3 "~" H 925 1710 50  0001 C CNN
+	1    925  1710
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1920 670  1125 670 
+Wire Wire Line
+	1125 670  1125 1020
+$Comp
+L power:GND #PWR01
+U 1 1 5FFE8322
+P 1130 1795
+F 0 "#PWR01" H 1130 1545 50  0001 C CNN
+F 1 "GND" H 1135 1622 50  0000 C CNN
+F 2 "" H 1130 1795 50  0001 C CNN
+F 3 "" H 1130 1795 50  0001 C CNN
+	1    1130 1795
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1125 1710 1130 1710
+Wire Wire Line
+	1130 1710 1130 1795
+Wire Wire Line
+	1255 1020 1125 1020
+Connection ~ 1125 1020
+Wire Wire Line
+	1125 1020 1125 1610
+$Comp
+L power:GND #PWR02
+U 1 1 60068A7E
+P 4350 1890
+F 0 "#PWR02" H 4350 1640 50  0001 C CNN
+F 1 "GND" H 4355 1717 50  0000 C CNN
+F 2 "" H 4350 1890 50  0001 C CNN
+F 3 "" H 4350 1890 50  0001 C CNN
+	1    4350 1890
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 670  4350 1020
+Wire Wire Line
+	4085 1595 4350 1595
+Connection ~ 4350 1595
+Wire Wire Line
+	4350 1595 4350 1890
+Connection ~ 4350 1020
+Wire Wire Line
+	4350 1020 4350 1595
+Wire Wire Line
+	3760 1020 4350 1020
+Wire Wire Line
+	3760 670  4350 670 
+Wire Wire Line
+	4350 1595 4475 1595
+Text Label 4475 1595 0    50   ~ 0
+OUT
+$EndSCHEMATC
