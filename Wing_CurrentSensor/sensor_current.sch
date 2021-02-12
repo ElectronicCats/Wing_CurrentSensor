@@ -463,14 +463,6 @@ Text Notes 2900 3450 0    50   ~ 0
 +Vs -Vs
 Text Notes 7750 3750 0    50   ~ 0
 Outs
-Wire Notes Line
-	2400 450  2450 450 
-Wire Notes Line
-	2400 450  2400 3150
-Wire Notes Line
-	5250 450  5250 3150
-Wire Notes Line
-	600  2150 11450 2150
 Wire Wire Line
 	7950 2150 8050 2150
 Wire Wire Line
@@ -495,8 +487,6 @@ Connection ~ 9950 2150
 Wire Wire Line
 	9950 2150 10250 2150
 Connection ~ 9800 1550
-Wire Notes Line
-	5450 3150 5450 5950
 Wire Notes Line
 	11200 5950 11200 5900
 Wire Notes Line
@@ -533,4 +523,12 @@ F 3 "" H 7200 5050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7200 5050 7550 5050
+Wire Notes Line
+	2550 3150 2550 450 
+Wire Notes Line
+	450  3150 11200 3150
+Wire Notes Line
+	5650 3150 5650 450 
+Wire Notes Line
+	5400 5950 5400 3200
 $EndSCHEMATC
