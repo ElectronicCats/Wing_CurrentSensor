@@ -93,16 +93,16 @@ F 3 "~" H 7750 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 4200 7300 4200
-Text Label 7300 4200 0    50   ~ 0
+	7550 4100 7300 4100
+Text Label 7300 4100 0    50   ~ 0
 OUT
 Wire Wire Line
-	7550 5150 7300 5150
+	7550 4950 7300 4950
 Wire Wire Line
-	7550 4950 7400 4950
-Text Label 7300 5150 0    50   ~ 0
+	7550 5150 7400 5150
+Text Label 7300 4950 0    50   ~ 0
 +Vs
-Text Label 7400 4950 0    50   ~ 0
+Text Label 7400 5150 0    50   ~ 0
 -Vs
 Wire Wire Line
 	3350 5250 3000 5250
@@ -122,6 +122,95 @@ Wire Wire Line
 Connection ~ 3000 5250
 Wire Wire Line
 	3000 5250 2550 5250
+$Comp
+L Connector:Screw_Terminal_01x03 Jin1
+U 1 1 602A22A8
+P 1300 1900
+F 0 "Jin1" H 1218 1575 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 1218 1666 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-3_P5.00mm" H 1300 1900 50  0001 C CNN
+F 3 "~" H 1300 1900 50  0001 C CNN
+	1    1300 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 2000 1800 2000
+Text Label 1800 2000 0    50   ~ 0
+in+
+$Comp
+L Device:R_POT RV1
+U 1 1 602A5CBE
+P 3200 2000
+F 0 "RV1" H 3131 2046 50  0000 R CNN
+F 1 "10K" H 3131 1955 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3299W_Vertical" H 3200 2000 50  0001 C CNN
+F 3 "~" H 3200 2000 50  0001 C CNN
+	1    3200 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1850 3350 1850
+Wire Wire Line
+	3350 1850 3350 2000
+Wire Wire Line
+	3350 1850 3450 1850
+Wire Wire Line
+	3450 1850 3450 1950
+Wire Wire Line
+	3450 1950 3600 1950
+Connection ~ 3350 1850
+Wire Wire Line
+	3200 2150 3600 2150
+Wire Wire Line
+	3900 1750 3900 1600
+Text Label 3900 1600 0    50   ~ 0
++Vs
+$Comp
+L Amplifier_Instrumentation:AD8421 U2
+U 1 1 602A5CCD
+P 4000 2050
+F 0 "U2" H 4444 2096 50  0000 L CNN
+F 1 "AD8226" H 4444 2005 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3700 2050 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8421.pdf" H 4350 1650 50  0001 C CNN
+	1    4000 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1850 3550 1850
+Wire Wire Line
+	3600 2250 3500 2250
+Wire Wire Line
+	3500 2250 3500 2350
+Text Label 3500 2350 0    50   ~ 0
+in+
+Wire Wire Line
+	3550 1850 3550 1700
+Text Label 3550 1700 0    50   ~ 0
+in-
+Wire Wire Line
+	3900 2350 3900 2450
+Text Label 3900 2450 0    50   ~ 0
+-Vs
+$Comp
+L power:GND #PWR0103
+U 1 1 602A5CE1
+P 4300 2350
+F 0 "#PWR0103" H 4300 2100 50  0001 C CNN
+F 1 "GND" H 4305 2177 50  0000 C CNN
+F 2 "" H 4300 2350 50  0001 C CNN
+F 3 "" H 4300 2350 50  0001 C CNN
+	1    4300 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2350 4300 2350
+Wire Wire Line
+	4600 2050 4600 1900
+Wire Wire Line
+	4400 2050 4600 2050
+Text Label 4600 1900 0    50   ~ 0
+out1
 Wire Wire Line
 	7250 2250 7250 2300
 Wire Wire Line
@@ -137,6 +226,17 @@ F 3 "~" H 7250 2450 50  0001 C CNN
 	1    7250 2450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Amplifier_Operational:TL084 U1
+U 1 1 602E05B2
+P 7650 2150
+F 0 "U1" H 7650 1783 50  0000 C CNN
+F 1 "TL084" H 7650 1874 50  0000 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 7600 2250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7700 2350 50  0001 C CNN
+	1    7650 2150
+	1    0    0    1   
+$EndComp
 Wire Wire Line
 	7250 2600 7250 2700
 $Comp
@@ -150,6 +250,21 @@ F 3 "" H 7250 2700 50  0001 C CNN
 	1    7250 2700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Amplifier_Operational:TL084 U1
+U 2 1 602E8C1B
+P 9600 2150
+F 0 "U1" H 9600 1783 50  0000 C CNN
+F 1 "TL084" H 9600 1874 50  0000 C CNN
+F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 9550 2250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 9650 2350 50  0001 C CNN
+	2    9600 2150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9200 2250 9300 2250
+Wire Wire Line
+	9200 2300 9200 2250
 $Comp
 L Device:R R6
 U 1 1 602E8C25
@@ -211,6 +326,8 @@ $EndComp
 Wire Wire Line
 	9200 1550 9050 1550
 Wire Wire Line
+	9200 1300 9200 1550
+Wire Wire Line
 	8050 1300 9200 1300
 Wire Wire Line
 	6650 1300 7750 1300
@@ -240,6 +357,10 @@ F 3 "~" H 8900 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
+	8500 2100 8200 2100
+Wire Wire Line
+	8500 2050 8500 2100
+Wire Wire Line
 	8500 1550 8500 1650
 Wire Wire Line
 	7950 1550 8500 1550
@@ -268,6 +389,8 @@ Wire Wire Line
 Wire Wire Line
 	8200 1650 7500 1650
 Wire Wire Line
+	8200 2100 8200 2050
+Wire Wire Line
 	7200 1650 7200 1750
 Wire Wire Line
 	7100 1650 7200 1650
@@ -281,6 +404,17 @@ F 2 "Diode_SMD:D_SOD-323F" H 8500 1850 50  0001 C CNN
 F 3 "~" H 8500 1850 50  0001 C CNN
 	1    8500 1850
 	0    1    1    0   
+$EndComp
+$Comp
+L pspice:DIODE D1
+U 1 1 602F1EFE
+P 8200 1850
+F 0 "D1" V 8154 1978 50  0000 L CNN
+F 1 "DIODE" V 8245 1978 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323F" H 8200 1850 50  0001 C CNN
+F 3 "~" H 8200 1850 50  0001 C CNN
+	1    8200 1850
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R1
@@ -302,23 +436,27 @@ Wire Wire Line
 Wire Wire Line
 	6650 1850 6650 1650
 Connection ~ 6650 1650
+Wire Wire Line
+	9900 2150 9950 2150
 Text Label 6550 1850 2    50   ~ 0
 out1
 $Comp
 L power:GND #PWR0106
 U 1 1 60379EAF
-P 7150 4100
-F 0 "#PWR0106" H 7150 3850 50  0001 C CNN
-F 1 "GND" H 7155 3927 50  0000 C CNN
-F 2 "" H 7150 4100 50  0001 C CNN
-F 3 "" H 7150 4100 50  0001 C CNN
-	1    7150 4100
+P 7150 4200
+F 0 "#PWR0106" H 7150 3950 50  0001 C CNN
+F 1 "GND" H 7155 4027 50  0000 C CNN
+F 2 "" H 7150 4200 50  0001 C CNN
+F 3 "" H 7150 4200 50  0001 C CNN
+	1    7150 4200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7550 4100 7150 4100
-Text Notes 900  1600 0    50   ~ 0
+	7550 4200 7150 4200
+Text Notes 1150 1400 0    50   ~ 0
 Inputs
+Text Notes 3300 1400 0    50   ~ 0
+Instrumentation opamp
 Text Notes 7800 750  0    50   ~ 0
 Rectifier circuit
 Text Notes 2900 3450 0    50   ~ 0
@@ -326,9 +464,26 @@ Text Notes 2900 3450 0    50   ~ 0
 Text Notes 7750 3750 0    50   ~ 0
 Outs
 Wire Wire Line
+	7950 2150 8050 2150
+Wire Wire Line
+	8050 2150 8050 2100
+Wire Wire Line
+	8050 2100 8200 2100
+Connection ~ 8200 2100
+Wire Wire Line
+	7350 2050 7200 2050
+Wire Wire Line
+	7200 2050 7200 1750
+Connection ~ 7200 1750
+Wire Wire Line
+	9200 2050 9200 1550
+Wire Wire Line
+	9200 2050 9300 2050
+Wire Wire Line
 	9950 2150 9950 1550
 Wire Wire Line
 	9950 1550 9800 1550
+Connection ~ 9950 2150
 Wire Wire Line
 	9950 2150 10250 2150
 Connection ~ 9800 1550
@@ -338,6 +493,23 @@ Wire Notes Line
 	450  5950 450  5900
 Wire Notes Line
 	450  5950 11200 5950
+$Comp
+L power:GND #PWR0107
+U 1 1 600BAA15
+P 1900 1800
+F 0 "#PWR0107" H 1900 1550 50  0001 C CNN
+F 1 "GND" H 1905 1627 50  0000 C CNN
+F 2 "" H 1900 1800 50  0001 C CNN
+F 3 "" H 1900 1800 50  0001 C CNN
+	1    1900 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1900 1800 1500 1800
+Text Label 1650 1900 0    50   ~ 0
+in-
+Wire Wire Line
+	1500 1900 1650 1900
 $Comp
 L power:GND #PWR0101
 U 1 1 6011B567
@@ -359,171 +531,4 @@ Wire Notes Line
 	5650 3150 5650 450 
 Wire Notes Line
 	5400 5950 5400 3200
-$Comp
-L Device:R_POT RV1
-U 1 1 60265634
-P 4300 1400
-F 0 "RV1" H 4231 1446 50  0000 R CNN
-F 1 "10K" H 4231 1355 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3299W_Vertical" H 4300 1400 50  0001 C CNN
-F 3 "~" H 4300 1400 50  0001 C CNN
-	1    4300 1400
-	0    1    1    0   
-$EndComp
-Text Notes 3350 650  0    50   ~ 0
-Instrumentation opamp
-$Comp
-L Device:R R8
-U 1 1 60272C8B
-P 3350 1750
-F 0 "R8" H 3420 1796 50  0000 L CNN
-F 1 "1K" H 3420 1705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3280 1750 50  0001 C CNN
-F 3 "~" H 3350 1750 50  0001 C CNN
-	1    3350 1750
-	0    -1   -1   0   
-$EndComp
-Text Label 2850 1750 0    50   ~ 0
-in+
-Wire Wire Line
-	3200 1750 2850 1750
-$Comp
-L power:GND #PWR0103
-U 1 1 602840F2
-P 3650 2100
-F 0 "#PWR0103" H 3650 1850 50  0001 C CNN
-F 1 "GND" H 3655 1927 50  0000 C CNN
-F 2 "" H 3650 2100 50  0001 C CNN
-F 3 "" H 3650 2100 50  0001 C CNN
-	1    3650 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 1750 3600 1750
-Wire Wire Line
-	4150 1400 3600 1400
-Wire Wire Line
-	3600 1400 3600 1750
-Wire Wire Line
-	4300 1550 4550 1550
-Wire Wire Line
-	4550 1550 4550 1400
-Wire Wire Line
-	4550 1400 4450 1400
-Wire Wire Line
-	4550 1850 4550 1550
-Connection ~ 4550 1550
-Text Label 4850 1850 0    50   ~ 0
-out1
-Wire Wire Line
-	4850 1850 4550 1850
-$Comp
-L Connector:Screw_Terminal_01x02 Jin1
-U 1 1 602AA911
-P 1450 2000
-F 0 "Jin1" H 1368 2217 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1368 2126 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 1450 2000 50  0001 C CNN
-F 3 "~" H 1450 2000 50  0001 C CNN
-	1    1450 2000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 602B0D72
-P 1800 2000
-F 0 "#PWR0107" H 1800 1750 50  0001 C CNN
-F 1 "GND" H 1805 1827 50  0000 C CNN
-F 2 "" H 1800 2000 50  0001 C CNN
-F 3 "" H 1800 2000 50  0001 C CNN
-	1    1800 2000
-	0    -1   -1   0   
-$EndComp
-Text Label 1800 2100 0    50   ~ 0
-in+
-Wire Wire Line
-	1650 2100 1800 2100
-Wire Wire Line
-	1650 2000 1800 2000
-$Comp
-L Amplifier_Operational:TL084 U1
-U 3 1 602C9FEA
-P 7650 2150
-F 0 "U1" H 7650 1783 50  0000 C CNN
-F 1 "TL084" H 7650 1874 50  0000 C CNN
-F 2 "" H 7600 2250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7700 2350 50  0001 C CNN
-	3    7650 2150
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	7350 2050 7200 2050
-Wire Wire Line
-	7200 2050 7200 1750
-Connection ~ 7200 1750
-$Comp
-L pspice:DIODE D1
-U 1 1 602F1EFE
-P 8200 1850
-F 0 "D1" V 8154 1978 50  0000 L CNN
-F 1 "DIODE" V 8245 1978 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323F" H 8200 1850 50  0001 C CNN
-F 3 "~" H 8200 1850 50  0001 C CNN
-	1    8200 1850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7950 2150 8200 2150
-Wire Wire Line
-	8200 2150 8200 2050
-Wire Wire Line
-	8500 2050 8500 2150
-Wire Wire Line
-	8500 2150 8200 2150
-Connection ~ 8200 2150
-$Comp
-L Amplifier_Operational:TL084 U1
-U 2 1 603366A7
-P 4000 1850
-F 0 "U1" H 4000 2217 50  0000 C CNN
-F 1 "TL084" H 4000 2126 50  0000 C CNN
-F 2 "" H 3950 1950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4050 2050 50  0001 C CNN
-	2    4000 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 1750 3600 1750
-Connection ~ 3600 1750
-Wire Wire Line
-	3700 1950 3650 1950
-Wire Wire Line
-	3650 1950 3650 2100
-Wire Wire Line
-	4300 1850 4550 1850
-Connection ~ 4550 1850
-$Comp
-L Amplifier_Operational:TL084 U1
-U 4 1 60343100
-P 9600 2150
-F 0 "U1" H 9600 1783 50  0000 C CNN
-F 1 "TL084" H 9600 1874 50  0000 C CNN
-F 2 "" H 9550 2250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 9650 2350 50  0001 C CNN
-	4    9600 2150
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	9200 1300 9200 1550
-Wire Wire Line
-	9300 2050 9200 2050
-Wire Wire Line
-	9200 2050 9200 1550
-Wire Wire Line
-	9300 2250 9200 2250
-Wire Wire Line
-	9200 2250 9200 2300
-Wire Wire Line
-	9900 2150 9950 2150
-Connection ~ 9950 2150
 $EndSCHEMATC
