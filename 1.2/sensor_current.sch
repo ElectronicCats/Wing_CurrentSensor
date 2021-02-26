@@ -455,11 +455,7 @@ Vref
 Text Label 9300 2850 0    50   ~ 0
 Vref
 Wire Wire Line
-	9250 2850 9200 2850
-Wire Wire Line
 	9200 2850 9200 2600
-Wire Wire Line
-	7300 2900 7250 2900
 Wire Wire Line
 	7250 2600 7250 2900
 Wire Wire Line
@@ -558,4 +554,8 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7700 2350 50  0001 C CNN
 	1    7650 2150
 	1    0    0    1   
 $EndComp
+Wire Wire Line
+	7250 2900 7350 2900
+Wire Wire Line
+	9200 2850 9300 2850
 $EndSCHEMATC
