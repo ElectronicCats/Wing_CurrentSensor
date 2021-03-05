@@ -47,6 +47,21 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 3100 4100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
+L Connector:Screw_Terminal_01x02 Jout1
+U 1 1 6021CFFA
+P 1500 1900
+F 0 "Jout1" H 1418 2117 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1418 2026 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 1500 1900 50  0001 C CNN
+F 3 "~" H 1500 1900 50  0001 C CNN
+	1    1500 1900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1300 1800 1050 1800
+Text Label 1050 1800 0    50   ~ 0
+OUT
+$Comp
 L power:GND #PWR0102
 U 1 1 60295F05
 P 3350 5500
@@ -299,6 +314,19 @@ Wire Wire Line
 	9750 2050 9800 2050
 Text Label 6400 1750 2    50   ~ 0
 out1
+$Comp
+L power:GND #PWR0106
+U 1 1 60379EAF
+P 900 1900
+F 0 "#PWR0106" H 900 1650 50  0001 C CNN
+F 1 "GND" H 905 1727 50  0000 C CNN
+F 2 "" H 900 1900 50  0001 C CNN
+F 3 "" H 900 1900 50  0001 C CNN
+	1    900  1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 1900 900  1900
 Text Notes 1100 650  0    50   ~ 0
 Inputs
 Text Notes 3300 1400 0    50   ~ 0
@@ -307,6 +335,8 @@ Text Notes 7650 650  0    50   ~ 0
 Rectifier circuit
 Text Notes 2900 3450 0    50   ~ 0
 +Vs -Vs
+Text Notes 1500 1450 0    50   ~ 0
+Outs
 Wire Wire Line
 	7800 2050 7900 2050
 Wire Wire Line
@@ -345,6 +375,25 @@ Wire Notes Line
 	5650 3150 5650 450 
 Wire Notes Line
 	8250 5950 8250 3200
+$Comp
+L Connector:Screw_Terminal_01x02 Jin1
+U 1 1 6035D717
+P 1150 1200
+F 0 "Jin1" H 1068 1417 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1068 1326 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 1150 1200 50  0001 C CNN
+F 3 "~" H 1150 1200 50  0001 C CNN
+	1    1150 1200
+	-1   0    0    -1  
+$EndComp
+Text Label 1700 1300 0    50   ~ 0
+in+
+Text Label 1550 1200 0    50   ~ 0
+in-
+Wire Wire Line
+	1550 1200 1350 1200
+Wire Wire Line
+	1350 1300 1700 1300
 $Comp
 L Device:R R8
 U 1 1 60371C97
@@ -427,12 +476,40 @@ Wire Notes Line
 Wire Wire Line
 	2550 3800 2550 4600
 $Comp
+L Connector:Screw_Terminal_01x02 Jout2
+U 1 1 60370155
+P 1650 2600
+F 0 "Jout2" H 1568 2817 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1568 2726 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 1650 2600 50  0001 C CNN
+F 3 "~" H 1650 2600 50  0001 C CNN
+	1    1650 2600
+	1    0    0    1   
+$EndComp
+Text Label 1200 2500 0    50   ~ 0
+VBUS
+$Comp
+L power:GND #PWR0105
+U 1 1 603705FE
+P 1200 2600
+F 0 "#PWR0105" H 1200 2350 50  0001 C CNN
+F 1 "GND" H 1205 2427 50  0000 C CNN
+F 2 "" H 1200 2600 50  0001 C CNN
+F 3 "" H 1200 2600 50  0001 C CNN
+	1    1200 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1200 2600 1450 2600
+Wire Wire Line
+	1200 2500 1450 2500
+$Comp
 L Amplifier_Operational:TL084 U1
 U 4 1 60375049
 P 6250 4500
 F 0 "U1" H 6250 4867 50  0000 C CNN
 F 1 "TL084" H 6250 4776 50  0000 C CNN
-F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 6200 4600 50  0001 C CNN
+F 2 "" H 6200 4600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6300 4700 50  0001 C CNN
 	4    6250 4500
 	1    0    0    -1  
@@ -543,6 +620,10 @@ Text Label 10300 4800 2    50   ~ 0
 10
 Text Label 10300 4900 2    50   ~ 0
 9
+Text Label 10300 5000 2    50   ~ 0
+in-
+Text Label 10300 5100 2    50   ~ 0
+in+
 Text Label 10300 5200 2    50   ~ 0
 SCL
 Text Label 10300 5300 2    50   ~ 0
@@ -551,6 +632,8 @@ Wire Wire Line
 	9050 3800 9250 3800
 Wire Wire Line
 	9050 4000 9250 4000
+Wire Wire Line
+	9050 4200 9250 4200
 Wire Wire Line
 	9050 4300 9250 4300
 Wire Wire Line
@@ -590,6 +673,10 @@ Wire Wire Line
 Wire Wire Line
 	10050 4900 10300 4900
 Wire Wire Line
+	10050 5000 10300 5000
+Wire Wire Line
+	10050 5100 10300 5100
+Wire Wire Line
 	10050 5200 10300 5200
 Wire Wire Line
 	10050 5300 10300 5300
@@ -607,12 +694,12 @@ $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5D3787E4
-P 8400 4200
-F 0 "#PWR02" H 8400 3950 50  0001 C CNN
-F 1 "GND" H 8405 4027 50  0000 C CNN
-F 2 "" H 8400 4200 50  0001 C CNN
-F 3 "" H 8400 4200 50  0001 C CNN
-	1    8400 4200
+P 8900 4200
+F 0 "#PWR02" H 8900 3950 50  0001 C CNN
+F 1 "GND" H 8905 4027 50  0000 C CNN
+F 2 "" H 8900 4200 50  0001 C CNN
+F 3 "" H 8900 4200 50  0001 C CNN
+	1    8900 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -620,35 +707,13 @@ Wire Wire Line
 Wire Wire Line
 	8900 3900 9250 3900
 Wire Wire Line
-	8400 4200 8400 4100
+	8900 4200 8900 4100
+Wire Wire Line
+	8900 4100 9250 4100
+Wire Notes Line
+	8700 3400 8700 5450
+Wire Notes Line
+	8700 5450 10850 5450
 NoConn ~ 9050 5300
 NoConn ~ 10300 4200
-Wire Wire Line
-	8400 4100 9250 4100
-Text Label 1650 2000 0    50   ~ 0
-in+
-Text Label 1700 1800 0    50   ~ 0
-in-
-NoConn ~ 10050 5000
-NoConn ~ 10050 5100
-Wire Wire Line
-	9050 4200 9250 4200
-$Comp
-L jack:SJ-3524-SMT J3
-U 1 1 6040A716
-P 1000 1900
-F 0 "J3" H 1107 2367 50  0000 C CNN
-F 1 "SJ-3524-SMT" H 1107 2276 50  0000 C CNN
-F 2 "CUI_SJ-3524-SMT" H 1000 1900 50  0001 L BNN
-F 3 "" H 1000 1900 50  0001 L BNN
-F 4 "CUI Inc" H 1000 1900 50  0001 L BNN "MF"
-F 5 "1.03" H 1000 1900 50  0001 L BNN "PARTREV"
-F 6 "Manufacturer recommendations" H 1000 1900 50  0001 L BNN "STANDARD"
-	1    1000 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 1800 1700 1800
-Wire Wire Line
-	1500 2000 1650 2000
 $EndSCHEMATC
