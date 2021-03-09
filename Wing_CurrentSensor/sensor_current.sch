@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Conversor AC a DC "
-Date ""
-Rev ""
+Title "Wing current sensor"
+Date "2021-03-05"
+Rev "1.0"
 Comp "ElectronicCats"
 Comment1 "Janin Mizael Gonzalez Campos"
 Comment2 ""
@@ -57,17 +57,6 @@ F 3 "" H 3350 5500 50  0001 C CNN
 	1    3350 5500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_POT RV1
-U 1 1 602A5CBE
-P 3200 2000
-F 0 "RV1" H 3131 2046 50  0000 R CNN
-F 1 "10K" H 3131 1955 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3299W_Vertical" H 3200 2000 50  0001 C CNN
-F 3 "~" H 3200 2000 50  0001 C CNN
-	1    3200 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3200 1850 3350 1850
 Wire Wire Line
@@ -85,17 +74,6 @@ Wire Wire Line
 	3900 1750 3900 1600
 Text Label 3900 1600 0    50   ~ 0
 VBUS
-$Comp
-L Amplifier_Instrumentation:AD8421 U2
-U 1 1 602A5CCD
-P 4000 2050
-F 0 "U2" H 4444 2096 50  0000 L CNN
-F 1 "AD8226" H 4444 2005 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3700 2050 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8421.pdf" H 4350 1650 50  0001 C CNN
-	1    4000 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3600 1850 3550 1850
 Wire Wire Line
@@ -103,19 +81,17 @@ Wire Wire Line
 Wire Wire Line
 	3500 2250 3500 2350
 Text Label 3500 2350 0    50   ~ 0
-in+
+IN+
 Wire Wire Line
 	3550 1850 3550 1700
 Text Label 3550 1700 0    50   ~ 0
-in-
-Wire Wire Line
-	4100 2350 4300 2350
+IN-
 Wire Wire Line
 	4600 2050 4600 1900
 Wire Wire Line
 	4400 2050 4600 2050
 Text Label 4600 1900 0    50   ~ 0
-out1
+OUT1
 Wire Wire Line
 	7100 2150 7100 2200
 Wire Wire Line
@@ -146,7 +122,7 @@ F 3 "~" H 9050 2350 50  0001 C CNN
 	1    9050 2350
 	1    0    0    -1  
 $EndComp
-Text Label 10100 2050 0    50   ~ 0
+Text Label 9800 2050 0    50   ~ 0
 OUT
 Wire Wire Line
 	9650 1450 9500 1450
@@ -254,17 +230,6 @@ Wire Wire Line
 Wire Wire Line
 	6950 1550 7050 1550
 $Comp
-L pspice:DIODE D2
-U 1 1 602F1EF8
-P 8350 1750
-F 0 "D2" V 8304 1878 50  0000 L CNN
-F 1 "DIODE" V 8395 1878 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323F" H 8350 1750 50  0001 C CNN
-F 3 "~" H 8350 1750 50  0001 C CNN
-	1    8350 1750
-	0    1    1    0   
-$EndComp
-$Comp
 L pspice:DIODE D1
 U 1 1 602F1EFE
 P 8050 1750
@@ -298,7 +263,7 @@ Connection ~ 6500 1550
 Wire Wire Line
 	9750 2050 9800 2050
 Text Label 6400 1750 2    50   ~ 0
-out1
+OUT1
 Text Notes 1100 650  0    50   ~ 0
 Inputs
 Text Notes 3300 1400 0    50   ~ 0
@@ -324,12 +289,9 @@ Wire Wire Line
 Wire Wire Line
 	9050 1950 9150 1950
 Wire Wire Line
-	9800 2050 9800 1450
+	9800 2050 9800 1950
 Wire Wire Line
 	9800 1450 9650 1450
-Connection ~ 9800 2050
-Wire Wire Line
-	9800 2050 10100 2050
 Connection ~ 9650 1450
 Wire Notes Line
 	11200 5950 11200 5900
@@ -381,13 +343,11 @@ $EndComp
 Wire Wire Line
 	5400 4750 5400 4950
 Text Label 6800 4500 0    50   ~ 0
-Vref
+VREF
 Text Label 5400 3750 1    50   ~ 0
 VBUS
 Wire Wire Line
 	5400 3950 5400 3750
-Text Label 4300 2350 0    50   ~ 0
-Vref
 $Comp
 L power:GND #PWR0103
 U 1 1 603897CB
@@ -399,12 +359,10 @@ F 3 "" H 3900 2550 50  0001 C CNN
 	1    3900 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 2350 3900 2550
 Text Label 7200 2800 0    50   ~ 0
-Vref
+VREF
 Text Label 9150 2750 0    50   ~ 0
-Vref
+VREF
 Wire Wire Line
 	9050 2750 9050 2500
 Wire Wire Line
@@ -626,9 +584,9 @@ NoConn ~ 10300 4200
 Wire Wire Line
 	8400 4100 9250 4100
 Text Label 1650 2000 0    50   ~ 0
-in+
+IN+
 Text Label 1700 1800 0    50   ~ 0
-in-
+IN-
 NoConn ~ 10050 5000
 NoConn ~ 10050 5100
 Wire Wire Line
@@ -651,4 +609,140 @@ Wire Wire Line
 	1500 1800 1700 1800
 Wire Wire Line
 	1500 2000 1650 2000
+NoConn ~ 10300 4900
+NoConn ~ 10300 4800
+NoConn ~ 10300 4700
+NoConn ~ 10300 4600
+NoConn ~ 10300 4500
+Connection ~ 9800 1500
+Wire Wire Line
+	9800 1500 9800 1450
+Connection ~ 9800 1600
+Wire Wire Line
+	9800 1600 9800 1500
+Connection ~ 9800 1700
+Wire Wire Line
+	9800 1700 9800 1600
+Wire Wire Line
+	3900 2350 3900 2550
+Text Label 4300 2350 0    50   ~ 0
+VREF
+Wire Wire Line
+	4100 2350 4300 2350
+$Comp
+L Amplifier_Instrumentation:AD8421 U2
+U 1 1 602A5CCD
+P 4000 2050
+F 0 "U2" H 4444 2096 50  0000 L CNN
+F 1 "AD8226" H 4444 2005 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3700 2050 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8421.pdf" H 4350 1650 50  0001 C CNN
+	1    4000 2050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1500 1900
+NoConn ~ 1500 1700
+NoConn ~ 9050 4800
+NoConn ~ 9050 4900
+NoConn ~ 9050 5100
+NoConn ~ 9050 5200
+NoConn ~ 9050 5000
+NoConn ~ 10300 5200
+NoConn ~ 10300 5300
+NoConn ~ 10300 4300
+NoConn ~ 9050 4000
+NoConn ~ 9050 3800
+Connection ~ 9800 1800
+Wire Wire Line
+	9800 1800 9800 1700
+Connection ~ 9800 1900
+Wire Wire Line
+	9800 1900 9800 1800
+$Comp
+L Connector_Generic:Conn_01x06 JA2
+U 1 1 60472DE0
+P 10250 1700
+F 0 "JA2" H 10330 1692 50  0000 L CNN
+F 1 "Conn_01x06" H 10330 1601 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 10250 1700 50  0001 C CNN
+F 3 "~" H 10250 1700 50  0001 C CNN
+	1    10250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 JA1
+U 1 1 60473370
+P 1250 4300
+F 0 "JA1" H 1330 4292 50  0000 L CNN
+F 1 "Conn_01x06" H 1330 4201 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1250 4300 50  0001 C CNN
+F 3 "~" H 1250 4300 50  0001 C CNN
+	1    1250 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9800 1500 10050 1500
+Wire Wire Line
+	9800 1600 10050 1600
+Wire Wire Line
+	9800 1700 10050 1700
+Wire Wire Line
+	9800 1800 10050 1800
+Wire Wire Line
+	9800 1900 10050 1900
+Wire Wire Line
+	10050 2000 10050 1950
+Wire Wire Line
+	10050 1950 9800 1950
+Connection ~ 9800 1950
+Wire Wire Line
+	9800 1950 9800 1900
+Text Label 1550 4000 0    50   ~ 0
+A0
+Text Label 1550 4100 0    50   ~ 0
+A1
+Text Label 1550 4200 0    50   ~ 0
+A2
+Text Label 1550 4300 0    50   ~ 0
+A3
+Text Label 1550 4400 0    50   ~ 0
+A4
+Text Label 1550 4500 0    50   ~ 0
+A5
+Wire Wire Line
+	1450 4000 1550 4000
+Wire Wire Line
+	1450 4100 1550 4100
+Wire Wire Line
+	1450 4200 1550 4200
+Wire Wire Line
+	1450 4300 1550 4300
+Wire Wire Line
+	1450 4400 1550 4400
+Wire Wire Line
+	1450 4500 1550 4500
+Wire Notes Line
+	1950 3150 1950 5950
+$Comp
+L pspice:DIODE D2
+U 1 1 602F1EF8
+P 8350 1750
+F 0 "D2" V 8304 1878 50  0000 L CNN
+F 1 "DIODE" V 8395 1878 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323F" H 8350 1750 50  0001 C CNN
+F 3 "~" H 8350 1750 50  0001 C CNN
+	1    8350 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 602A5CBE
+P 3200 2000
+F 0 "RV1" H 3131 2046 50  0000 R CNN
+F 1 "10K" H 3131 1955 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3299W_Vertical" H 3200 2000 50  0001 C CNN
+F 3 "~" H 3200 2000 50  0001 C CNN
+	1    3200 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
