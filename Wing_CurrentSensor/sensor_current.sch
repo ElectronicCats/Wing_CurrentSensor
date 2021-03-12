@@ -20,10 +20,6 @@ Wire Wire Line
 	3350 4800 3350 4400
 Wire Wire Line
 	3350 3800 3350 4400
-Wire Wire Line
-	3350 4400 3150 4400
-Text Label 3150 4400 2    50   ~ 0
-VBUS
 $Comp
 L Device:CP1 C2
 U 1 1 601E5B1F
@@ -70,10 +66,6 @@ Wire Wire Line
 Connection ~ 3350 1850
 Wire Wire Line
 	3200 2150 3600 2150
-Wire Wire Line
-	3900 1750 3900 1600
-Text Label 3900 1600 0    50   ~ 0
-VBUS
 Wire Wire Line
 	3600 1850 3550 1850
 Wire Wire Line
@@ -266,7 +258,7 @@ Text Label 6400 1750 2    50   ~ 0
 OUT1
 Text Notes 1100 650  0    50   ~ 0
 Inputs
-Text Notes 3300 1400 0    50   ~ 0
+Text Notes 3300 1050 0    50   ~ 0
 Instrumentation opamp
 Text Notes 7650 650  0    50   ~ 0
 Rectifier circuit
@@ -344,10 +336,6 @@ Wire Wire Line
 	5400 4750 5400 4950
 Text Label 6800 4500 0    50   ~ 0
 VREF
-Text Label 5400 3750 1    50   ~ 0
-VBUS
-Wire Wire Line
-	5400 3950 5400 3750
 $Comp
 L power:GND #PWR0103
 U 1 1 603897CB
@@ -745,4 +733,46 @@ F 3 "~" H 3200 2000 50  0001 C CNN
 	1    3200 2000
 	1    0    0    -1  
 $EndComp
+NoConn ~ 10300 4400
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 604C3DB9
+P 5400 3650
+F 0 "#PWR0105" H 5400 3500 50  0001 C CNN
+F 1 "+3.3V" H 5415 3823 50  0000 C CNN
+F 2 "" H 5400 3650 50  0001 C CNN
+F 3 "" H 5400 3650 50  0001 C CNN
+	1    5400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3650 5400 3950
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 604CD61E
+P 3600 4350
+F 0 "#PWR0106" H 3600 4200 50  0001 C CNN
+F 1 "+3.3V" H 3615 4523 50  0000 C CNN
+F 2 "" H 3600 4350 50  0001 C CNN
+F 3 "" H 3600 4350 50  0001 C CNN
+	1    3600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4350 3600 4400
+Wire Wire Line
+	3600 4400 3350 4400
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 604DF341
+P 3900 1350
+F 0 "#PWR0107" H 3900 1200 50  0001 C CNN
+F 1 "+3.3V" H 3915 1523 50  0000 C CNN
+F 2 "" H 3900 1350 50  0001 C CNN
+F 3 "" H 3900 1350 50  0001 C CNN
+	1    3900 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1350 3900 1750
 $EndSCHEMATC
