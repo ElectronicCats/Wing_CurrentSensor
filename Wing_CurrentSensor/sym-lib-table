@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name sensor_current-rescue)(type Legacy)(uri ${KIPRJMOD}/sensor_current-rescue.lib)(options "")(descr ""))
+  (lib (name sensor_current_1-rescue)(type Legacy)(uri ${KIPRJMOD}/sensor_current_1-rescue.lib)(options "")(descr ""))
+)

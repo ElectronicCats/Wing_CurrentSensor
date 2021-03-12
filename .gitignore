@@ -26,3 +26,5 @@ fp-info-cache
 *.csv
 
 .DS_Store
+
+Wing_CurrentSensor/currentSensorGerberv1.0/
