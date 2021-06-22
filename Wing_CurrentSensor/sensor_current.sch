@@ -571,9 +571,9 @@ NoConn ~ 9050 5300
 NoConn ~ 10300 4200
 Wire Wire Line
 	8400 4100 9250 4100
-Text Label 1650 2000 0    50   ~ 0
+Text Label 1650 1900 0    50   ~ 0
 IN+
-Text Label 1700 1800 0    50   ~ 0
+Text Label 1700 1700 0    50   ~ 0
 IN-
 NoConn ~ 10050 5000
 NoConn ~ 10050 5100
@@ -594,9 +594,9 @@ F 6 "Manufacturer recommendations" H 1000 1900 50  0001 L BNN "STANDARD"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 1800 1700 1800
+	1500 1700 1595 1700
 Wire Wire Line
-	1500 2000 1650 2000
+	1500 1900 1650 1900
 NoConn ~ 10300 4900
 NoConn ~ 10300 4800
 NoConn ~ 10300 4700
@@ -628,8 +628,7 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8421.
 	1    4000 2050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1500 1900
-NoConn ~ 1500 1700
+NoConn ~ 1500 1800
 NoConn ~ 9050 4800
 NoConn ~ 9050 4900
 NoConn ~ 9050 5100
@@ -764,4 +763,20 @@ F 3 "~" H 10250 1700 50  0001 C CNN
 	1    10250 1700
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 60D403E1
+P 1595 1740
+F 0 "#PWR0108" H 1595 1490 50  0001 C CNN
+F 1 "GND" H 1600 1567 50  0000 C CNN
+F 2 "" H 1595 1740 50  0001 C CNN
+F 3 "" H 1595 1740 50  0001 C CNN
+	1    1595 1740
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1595 1740 1595 1700
+Connection ~ 1595 1700
+Wire Wire Line
+	1595 1700 1700 1700
 $EndSCHEMATC
