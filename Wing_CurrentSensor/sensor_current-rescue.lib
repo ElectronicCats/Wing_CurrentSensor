@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# +3.3V-power
+# +3.3V-power-sensor_current-rescue
 #
-DEF +3.3V-power #PWR 0 0 Y Y 1 F P
+DEF +3.3V-power-sensor_current-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "+3.3V-power" 0 140 50 H V C CNN
+F1 "+3.3V-power-sensor_current-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +16,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# AD8421-Amplifier_Instrumentation
+# AD8421-Amplifier_Instrumentation-sensor_current-rescue
 #
-DEF AD8421-Amplifier_Instrumentation U 0 5 Y Y 1 F N
+DEF AD8421-Amplifier_Instrumentation-sensor_current-rescue U 0 5 Y Y 1 F N
 F0 "U" 150 300 50 H V C CNN
-F1 "AD8421-Amplifier_Instrumentation" 150 200 50 H V C CNN
+F1 "AD8421-Amplifier_Instrumentation-sensor_current-rescue" 150 200 50 H V C CNN
 F2 "" -300 0 50 H I C CNN
 F3 "" 350 -400 50 H I C CNN
 $FPLIST
@@ -40,11 +40,11 @@ X Vs+ 8 -100 300 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# CP1-Device
+# CP1-Device-sensor_current-rescue
 #
-DEF CP1-Device C 0 10 N N 1 F N
+DEF CP1-Device-sensor_current-rescue C 0 10 N N 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "CP1-Device" 25 -100 50 H V L CNN
+F1 "CP1-Device-sensor_current-rescue" 25 -100 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -60,38 +60,11 @@ X ~ 2 0 -150 130 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_01x06-Connector_Generic
+# Conn_01x12-Connector_Generic-sensor_current-rescue
 #
-DEF Conn_01x06-Connector_Generic J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "Conn_01x06-Connector_Generic" 0 -400 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -295 0 -305 1 1 6 N
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 205 0 195 1 1 6 N
-S -50 250 50 -350 1 1 10 f
-X Pin_1 1 -200 200 150 R 50 50 1 1 P
-X Pin_2 2 -200 100 150 R 50 50 1 1 P
-X Pin_3 3 -200 0 150 R 50 50 1 1 P
-X Pin_4 4 -200 -100 150 R 50 50 1 1 P
-X Pin_5 5 -200 -200 150 R 50 50 1 1 P
-X Pin_6 6 -200 -300 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Conn_01x12-Connector_Generic
-#
-DEF Conn_01x12-Connector_Generic J 0 40 Y N 1 F N
+DEF Conn_01x12-Connector_Generic-sensor_current-rescue J 0 40 Y N 1 F N
 F0 "J" 0 600 50 H V C CNN
-F1 "Conn_01x12-Connector_Generic" 0 -700 50 H V C CNN
+F1 "Conn_01x12-Connector_Generic-sensor_current-rescue" 0 -700 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -126,11 +99,11 @@ X Pin_9 9 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_01x16-Connector_Generic
+# Conn_01x16-Connector_Generic-sensor_current-rescue
 #
-DEF Conn_01x16-Connector_Generic J 0 40 Y N 1 F N
+DEF Conn_01x16-Connector_Generic-sensor_current-rescue J 0 40 Y N 1 F N
 F0 "J" 0 800 50 H V C CNN
-F1 "Conn_01x16-Connector_Generic" 0 -900 50 H V C CNN
+F1 "Conn_01x16-Connector_Generic-sensor_current-rescue" 0 -900 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -173,11 +146,11 @@ X Pin_9 9 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# DIODE-pspice
+# DIODE-pspice-sensor_current-rescue
 #
-DEF DIODE-pspice D 0 40 Y N 1 F N
+DEF DIODE-pspice-sensor_current-rescue D 0 40 Y N 1 F N
 F0 "D" 0 150 50 H V C CNN
-F1 "DIODE-pspice" 0 -175 50 H V C CNN
+F1 "DIODE-pspice-sensor_current-rescue" 0 -175 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -188,11 +161,11 @@ X A 2 200 0 150 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# GND-power
+# GND-power-sensor_current-rescue
 #
-DEF GND-power #PWR 0 0 Y Y 1 F P
+DEF GND-power-sensor_current-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "GND-power" 0 -150 50 H V C CNN
+F1 "GND-power-sensor_current-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -201,11 +174,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# R-Device
+# R-Device-sensor_current-rescue
 #
-DEF R-Device R 0 0 N Y 1 F N
+DEF R-Device-sensor_current-rescue R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "R-Device" 0 0 50 V V C CNN
+F1 "R-Device-sensor_current-rescue" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -218,11 +191,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# R_POT-Device
+# R_POT-Device-sensor_current-rescue
 #
-DEF R_POT-Device RV 0 40 Y N 1 F N
+DEF R_POT-Device-sensor_current-rescue RV 0 40 Y N 1 F N
 F0 "RV" -175 0 50 V V C CNN
-F1 "R_POT-Device" -100 0 50 V V C CNN
+F1 "R_POT-Device-sensor_current-rescue" -100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -238,11 +211,11 @@ X 3 3 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# SJ-3524-SMT-jack
+# SJ-3524-SMT-jack-sensor_current-rescue
 #
-DEF SJ-3524-SMT-jack J 0 40 Y N 1 L N
+DEF SJ-3524-SMT-jack-sensor_current-rescue J 0 40 Y N 1 L N
 F0 "J" -301 326 50 H V L BNN
-F1 "SJ-3524-SMT-jack" -301 -302 50 H V L BNN
+F1 "SJ-3524-SMT-jack-sensor_current-rescue" -301 -302 50 H V L BNN
 F2 "CUI_SJ-3524-SMT" 0 0 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
 F4 "CUI Inc" 0 0 50 H I L BNN "MF"
@@ -276,11 +249,11 @@ X ~ 3 500 0 200 L 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
-# TL084-Amplifier_Operational
+# TL084-Amplifier_Operational-sensor_current-rescue
 #
-DEF TL084-Amplifier_Operational U 0 5 Y Y 5 L N
+DEF TL084-Amplifier_Operational-sensor_current-rescue U 0 5 Y Y 5 L N
 F0 "U" 0 200 50 H V L CNN
-F1 "TL084-Amplifier_Operational" 0 -200 50 H V L CNN
+F1 "TL084-Amplifier_Operational-sensor_current-rescue" 0 -200 50 H V L CNN
 F2 "" -50 100 50 H I C CNN
 F3 "" 50 200 50 H I C CNN
 $FPLIST

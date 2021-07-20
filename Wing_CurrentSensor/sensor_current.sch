@@ -36,7 +36,7 @@ L sensor_current-rescue:TL084-Amplifier_Operational U1
 U 5 1 601E5B25
 P 3050 3900
 F 0 "U1" H 3008 3946 50  0000 L CNN
-F 1 "TL084" H 3008 3855 50  0000 L CNN
+F 1 "MCP6009" H 3008 3855 50  0000 L CNN
 F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 3000 4000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 3100 4100 50  0001 C CNN
 	5    3050 3900
@@ -114,7 +114,7 @@ F 3 "~" H 9050 2350 50  0001 C CNN
 	1    9050 2350
 	1    0    0    -1  
 $EndComp
-Text Label 9800 2050 0    50   ~ 0
+Text Label 9800 2045 0    50   ~ 0
 OUT
 Wire Wire Line
 	9650 1450 9500 1450
@@ -184,10 +184,6 @@ F 3 "~" H 8750 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8350 2000 8050 2000
-Wire Wire Line
-	8350 1950 8350 2000
-Wire Wire Line
 	8350 1450 8350 1550
 Wire Wire Line
 	7800 1450 8350 1450
@@ -210,26 +206,18 @@ F 3 "~" H 7650 1450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7350 1650 7050 1650
-Wire Wire Line
-	7350 1550 7350 1650
-Wire Wire Line
-	8050 1550 7350 1550
-Wire Wire Line
-	8050 2000 8050 1950
-Wire Wire Line
-	7050 1550 7050 1650
+	7050 1550 7050 1595
 Wire Wire Line
 	6950 1550 7050 1550
 $Comp
 L sensor_current-rescue:DIODE-pspice D1
 U 1 1 602F1EFE
-P 8050 1750
-F 0 "D1" V 8004 1878 50  0000 L CNN
-F 1 "DIODE" V 8095 1878 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323F" H 8050 1750 50  0001 C CNN
-F 3 "~" H 8050 1750 50  0001 C CNN
-	1    8050 1750
+P 8050 1795
+F 0 "D1" V 8004 1923 50  0000 L CNN
+F 1 "DIODE" V 8095 1923 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323F" H 8050 1795 50  0001 C CNN
+F 3 "~" H 8050 1795 50  0001 C CNN
+	1    8050 1795
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -265,23 +253,11 @@ Rectifier circuit
 Text Notes 2900 3450 0    50   ~ 0
 +Vs -Vs
 Wire Wire Line
-	7800 2050 7900 2050
-Wire Wire Line
-	7900 2050 7900 2000
-Wire Wire Line
-	7900 2000 8050 2000
-Connection ~ 8050 2000
-Wire Wire Line
 	7200 1950 7050 1950
-Wire Wire Line
-	7050 1950 7050 1650
-Connection ~ 7050 1650
 Wire Wire Line
 	9050 1950 9050 1450
 Wire Wire Line
 	9050 1950 9150 1950
-Wire Wire Line
-	9800 2050 9800 1950
 Wire Wire Line
 	9800 1450 9650 1450
 Connection ~ 9650 1450
@@ -377,7 +353,7 @@ L sensor_current-rescue:TL084-Amplifier_Operational U1
 U 4 1 60375049
 P 6250 4500
 F 0 "U1" H 6250 4867 50  0000 C CNN
-F 1 "TL084" H 6250 4776 50  0000 C CNN
+F 1 "MCP6009" H 6250 4776 50  0000 C CNN
 F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 6200 4600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6300 4700 50  0001 C CNN
 	4    6250 4500
@@ -406,7 +382,7 @@ L sensor_current-rescue:TL084-Amplifier_Operational U1
 U 2 1 602E8C1B
 P 9450 2050
 F 0 "U1" H 9450 1683 50  0000 C CNN
-F 1 "TL084" H 9450 1774 50  0000 C CNN
+F 1 "MCP6009" H 9450 1774 50  0000 C CNN
 F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 9400 2150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 9500 2250 50  0001 C CNN
 	2    9450 2050
@@ -417,7 +393,7 @@ L sensor_current-rescue:TL084-Amplifier_Operational U1
 U 1 1 602E05B2
 P 7500 2050
 F 0 "U1" H 7500 1683 50  0000 C CNN
-F 1 "TL084" H 7500 1774 50  0000 C CNN
+F 1 "MCP6009" H 7500 1774 50  0000 C CNN
 F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 7450 2150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7550 2250 50  0001 C CNN
 	1    7500 2050
@@ -602,15 +578,6 @@ NoConn ~ 10300 4800
 NoConn ~ 10300 4700
 NoConn ~ 10300 4600
 NoConn ~ 10300 4500
-Connection ~ 9800 1500
-Wire Wire Line
-	9800 1500 9800 1450
-Connection ~ 9800 1600
-Wire Wire Line
-	9800 1600 9800 1500
-Connection ~ 9800 1700
-Wire Wire Line
-	9800 1700 9800 1600
 Wire Wire Line
 	3900 2350 3900 2550
 Text Label 4300 2350 0    50   ~ 0
@@ -639,53 +606,18 @@ NoConn ~ 10300 5300
 NoConn ~ 10300 4300
 NoConn ~ 9050 4000
 NoConn ~ 9050 3800
-Connection ~ 9800 1800
-Wire Wire Line
-	9800 1800 9800 1700
-Connection ~ 9800 1900
-Wire Wire Line
-	9800 1900 9800 1800
-Wire Wire Line
-	9800 1500 10050 1500
-Wire Wire Line
-	9800 1600 10050 1600
-Wire Wire Line
-	9800 1700 10050 1700
-Wire Wire Line
-	9800 1800 10050 1800
-Wire Wire Line
-	9800 1900 10050 1900
-Wire Wire Line
-	10050 2000 10050 1950
-Wire Wire Line
-	10050 1950 9800 1950
-Connection ~ 9800 1950
-Wire Wire Line
-	9800 1950 9800 1900
-Text Label 10650 2000 0    50   ~ 0
+Text Label 1455 4940 0    50   ~ 0
 A0
-Text Label 10650 1900 0    50   ~ 0
+Text Label 1460 4710 0    50   ~ 0
 A1
-Text Label 10650 1800 0    50   ~ 0
+Text Label 1435 4465 0    50   ~ 0
 A2
-Text Label 10650 1700 0    50   ~ 0
+Text Label 1445 4250 0    50   ~ 0
 A3
-Text Label 10650 1600 0    50   ~ 0
+Text Label 1435 4035 0    50   ~ 0
 A4
-Text Label 10650 1500 0    50   ~ 0
+Text Label 1435 3775 0    50   ~ 0
 A5
-Wire Wire Line
-	10550 2000 10650 2000
-Wire Wire Line
-	10550 1900 10650 1900
-Wire Wire Line
-	10550 1800 10650 1800
-Wire Wire Line
-	10550 1700 10650 1700
-Wire Wire Line
-	10550 1600 10650 1600
-Wire Wire Line
-	10550 1500 10650 1500
 Wire Notes Line
 	1950 3150 1950 5950
 $Comp
@@ -753,17 +685,6 @@ $EndComp
 Wire Wire Line
 	3900 1350 3900 1750
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J4
-U 1 1 604C74A8
-P 10250 1700
-F 0 "J4" H 10300 2117 50  0000 C CNN
-F 1 "Analog Selection" H 10300 2026 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 10250 1700 50  0001 C CNN
-F 3 "~" H 10250 1700 50  0001 C CNN
-	1    10250 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0108
 U 1 1 60D403E1
 P 1595 1740
@@ -779,4 +700,122 @@ Wire Wire Line
 Connection ~ 1595 1700
 Wire Wire Line
 	1595 1700 1700 1700
+Wire Wire Line
+	8350 2050 8050 2050
+Wire Wire Line
+	8350 1950 8350 2050
+Connection ~ 8050 2050
+Wire Wire Line
+	7800 2050 8050 2050
+Wire Wire Line
+	8050 1995 8050 2050
+Connection ~ 7050 1595
+Wire Wire Line
+	7050 1595 7050 1950
+Wire Wire Line
+	7050 1595 8050 1595
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 60FA6350
+P 1085 4035
+F 0 "JP2" H 1085 4090 50  0000 C CNN
+F 1 "A4" H 1085 3980 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1085 4035 50  0001 C CNN
+F 3 "~" H 1085 4035 50  0001 C CNN
+	1    1085 4035
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP5
+U 1 1 60FA6D93
+P 1105 4940
+F 0 "JP5" H 1105 5015 50  0000 C CNN
+F 1 "A0" H 1115 4870 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1105 4940 50  0001 C CNN
+F 3 "~" H 1105 4940 50  0001 C CNN
+	1    1105 4940
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 60FA70DF
+P 1080 3775
+F 0 "JP1" H 1080 3855 50  0000 C CNN
+F 1 "A5" H 1080 3710 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1080 3775 50  0001 C CNN
+F 3 "~" H 1080 3775 50  0001 C CNN
+	1    1080 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP4
+U 1 1 60FA73E6
+P 1100 4250
+F 0 "JP4" H 1100 4315 50  0000 C CNN
+F 1 "A3" H 1100 4200 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1100 4250 50  0001 C CNN
+F 3 "~" H 1100 4250 50  0001 C CNN
+	1    1100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP3
+U 1 1 60FA78D6
+P 1090 4465
+F 0 "JP3" H 1085 4515 50  0000 C CNN
+F 1 "A2" H 1090 4405 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1090 4465 50  0001 C CNN
+F 3 "~" H 1090 4465 50  0001 C CNN
+	1    1090 4465
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP6
+U 1 1 60FA7B5D
+P 1115 4710
+F 0 "JP6" H 1105 4790 50  0000 C CNN
+F 1 "A1" H 1115 4660 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1115 4710 50  0001 C CNN
+F 3 "~" H 1115 4710 50  0001 C CNN
+	1    1115 4710
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1180 3775 1435 3775
+Wire Wire Line
+	1185 4035 1435 4035
+Wire Wire Line
+	1200 4250 1445 4250
+Wire Wire Line
+	1190 4465 1435 4465
+Wire Wire Line
+	1215 4710 1460 4710
+Wire Wire Line
+	1205 4940 1455 4940
+Wire Wire Line
+	9800 1450 9800 2050
+Text Label 915  3775 2    50   ~ 0
+OUT
+Text Label 915  4035 2    50   ~ 0
+OUT
+Text Label 925  4250 2    50   ~ 0
+OUT
+Text Label 915  4465 2    50   ~ 0
+OUT
+Text Label 940  4710 2    50   ~ 0
+OUT
+Text Label 935  4940 2    50   ~ 0
+OUT
+Wire Wire Line
+	935  4940 1005 4940
+Wire Wire Line
+	940  4710 1015 4710
+Wire Wire Line
+	915  4465 990  4465
+Wire Wire Line
+	925  4250 1000 4250
+Wire Wire Line
+	915  4035 985  4035
+Wire Wire Line
+	915  3775 980  3775
 $EndSCHEMATC
