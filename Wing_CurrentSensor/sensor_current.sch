@@ -21,7 +21,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 3800 3350 4400
 $Comp
-L sensor_current-rescue:CP1-Device C2
+L sensor_current-rescue:CP1-Device-sensor_current-rescue C2
 U 1 1 601E5B1F
 P 3350 4950
 F 0 "C2" V 3098 4950 50  0000 C CNN
@@ -32,7 +32,7 @@ F 3 "~" H 3350 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L sensor_current-rescue:TL084-Amplifier_Operational U1
+L sensor_current-rescue:TL084-Amplifier_Operational-sensor_current-rescue U1
 U 5 1 601E5B25
 P 3050 3900
 F 0 "U1" H 3008 3946 50  0000 L CNN
@@ -43,7 +43,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 3100 4100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L sensor_current-rescue:GND-power #PWR0102
+L sensor_current-rescue:GND-power-sensor_current-rescue #PWR0102
 U 1 1 60295F05
 P 3350 5500
 F 0 "#PWR0102" H 3350 5250 50  0001 C CNN
@@ -89,7 +89,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 2150 7100 2150
 $Comp
-L sensor_current-rescue:R-Device R2
+L sensor_current-rescue:R-Device-sensor_current-rescue R2
 U 1 1 602E05A9
 P 7100 2350
 F 0 "R2" H 7170 2396 50  0000 L CNN
@@ -104,7 +104,7 @@ Wire Wire Line
 Wire Wire Line
 	9050 2200 9050 2150
 $Comp
-L sensor_current-rescue:R-Device R6
+L sensor_current-rescue:R-Device-sensor_current-rescue R6
 U 1 1 602E8C25
 P 9050 2350
 F 0 "R6" H 9120 2396 50  0000 L CNN
@@ -126,7 +126,7 @@ Connection ~ 9050 1450
 Wire Wire Line
 	9200 1450 9050 1450
 $Comp
-L sensor_current-rescue:R-Device R7
+L sensor_current-rescue:R-Device-sensor_current-rescue R7
 U 1 1 602F1EB7
 P 9350 1450
 F 0 "R7" H 9420 1496 50  0000 L CNN
@@ -140,7 +140,7 @@ Connection ~ 9050 1200
 Wire Wire Line
 	9200 1200 9050 1200
 $Comp
-L sensor_current-rescue:CP1-Device C1
+L sensor_current-rescue:CP1-Device-sensor_current-rescue C1
 U 1 1 602F1EBF
 P 9350 1200
 F 0 "C1" V 9098 1200 50  0000 C CNN
@@ -159,7 +159,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 1200 7600 1200
 $Comp
-L sensor_current-rescue:R-Device R4
+L sensor_current-rescue:R-Device-sensor_current-rescue R4
 U 1 1 602F1EC9
 P 7750 1200
 F 0 "R4" H 7820 1246 50  0000 L CNN
@@ -173,7 +173,7 @@ Connection ~ 8350 1450
 Wire Wire Line
 	8600 1450 8350 1450
 $Comp
-L sensor_current-rescue:R-Device R5
+L sensor_current-rescue:R-Device-sensor_current-rescue R5
 U 1 1 602F1ED1
 P 8750 1450
 F 0 "R5" H 8820 1496 50  0000 L CNN
@@ -195,7 +195,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 1550 7250 1550
 $Comp
-L sensor_current-rescue:R-Device R3
+L sensor_current-rescue:R-Device-sensor_current-rescue R3
 U 1 1 602F1EE8
 P 7650 1450
 F 0 "R3" H 7720 1496 50  0000 L CNN
@@ -210,7 +210,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 1550 7050 1550
 $Comp
-L sensor_current-rescue:DIODE-pspice D1
+L sensor_current-rescue:DIODE-pspice-sensor_current-rescue D1
 U 1 1 602F1EFE
 P 8050 1795
 F 0 "D1" V 8004 1923 50  0000 L CNN
@@ -221,7 +221,7 @@ F 3 "~" H 8050 1795 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L sensor_current-rescue:R-Device R1
+L sensor_current-rescue:R-Device-sensor_current-rescue R1
 U 1 1 602F1F0A
 P 6800 1550
 F 0 "R1" H 6870 1596 50  0000 L CNN
@@ -276,7 +276,7 @@ Wire Notes Line
 Wire Notes Line
 	8250 5950 8250 3200
 $Comp
-L sensor_current-rescue:R-Device R8
+L sensor_current-rescue:R-Device-sensor_current-rescue R8
 U 1 1 60371C97
 P 5400 4100
 F 0 "R8" H 5470 4146 50  0000 L CNN
@@ -287,7 +287,7 @@ F 3 "~" H 5400 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L sensor_current-rescue:R-Device R9
+L sensor_current-rescue:R-Device-sensor_current-rescue R9
 U 1 1 60372648
 P 5400 4600
 F 0 "R9" H 5470 4646 50  0000 L CNN
@@ -298,7 +298,7 @@ F 3 "~" H 5400 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L sensor_current-rescue:GND-power #PWR0101
+L sensor_current-rescue:GND-power-sensor_current-rescue #PWR0101
 U 1 1 6037A08F
 P 5400 4950
 F 0 "#PWR0101" H 5400 4700 50  0001 C CNN
@@ -313,7 +313,7 @@ Wire Wire Line
 Text Label 6800 4500 0    50   ~ 0
 VREF
 $Comp
-L sensor_current-rescue:GND-power #PWR0103
+L sensor_current-rescue:GND-power-sensor_current-rescue #PWR0103
 U 1 1 603897CB
 P 3900 2550
 F 0 "#PWR0103" H 3900 2300 50  0001 C CNN
@@ -334,7 +334,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 5100 3350 5500
 $Comp
-L sensor_current-rescue:GND-power #PWR0104
+L sensor_current-rescue:GND-power-sensor_current-rescue #PWR0104
 U 1 1 603A380E
 P 2550 4600
 F 0 "#PWR0104" H 2550 4350 50  0001 C CNN
@@ -349,7 +349,7 @@ Wire Notes Line
 Wire Wire Line
 	2550 3800 2550 4600
 $Comp
-L sensor_current-rescue:TL084-Amplifier_Operational U1
+L sensor_current-rescue:TL084-Amplifier_Operational-sensor_current-rescue U1
 U 4 1 60375049
 P 6250 4500
 F 0 "U1" H 6250 4867 50  0000 C CNN
@@ -378,7 +378,7 @@ Connection ~ 5400 4400
 Wire Wire Line
 	5400 4400 5400 4450
 $Comp
-L sensor_current-rescue:TL084-Amplifier_Operational U1
+L sensor_current-rescue:TL084-Amplifier_Operational-sensor_current-rescue U1
 U 2 1 602E8C1B
 P 9450 2050
 F 0 "U1" H 9450 1683 50  0000 C CNN
@@ -389,7 +389,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 9500 2250 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L sensor_current-rescue:TL084-Amplifier_Operational U1
+L sensor_current-rescue:TL084-Amplifier_Operational-sensor_current-rescue U1
 U 1 1 602E05B2
 P 7500 2050
 F 0 "U1" H 7500 1683 50  0000 C CNN
@@ -404,7 +404,7 @@ Wire Wire Line
 Wire Wire Line
 	9050 2750 9150 2750
 $Comp
-L sensor_current-rescue:Conn_01x16-Connector_Generic J1
+L sensor_current-rescue:Conn_01x16-Connector_Generic-sensor_current-rescue J1
 U 1 1 5D375C76
 P 9450 4600
 F 0 "J1" H 9369 3575 50  0000 C CNN
@@ -415,7 +415,7 @@ F 3 "~" H 9450 4600 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L sensor_current-rescue:Conn_01x12-Connector_Generic J2
+L sensor_current-rescue:Conn_01x12-Connector_Generic-sensor_current-rescue J2
 U 1 1 5D375CC4
 P 9850 4800
 F 0 "J2" H 9770 3975 50  0000 C CNN
@@ -516,7 +516,7 @@ Wire Wire Line
 Wire Wire Line
 	10050 5300 10300 5300
 $Comp
-L sensor_current-rescue:+3.3V-power #PWR01
+L sensor_current-rescue:+3.3V-power-sensor_current-rescue #PWR01
 U 1 1 5D37877D
 P 8900 3800
 F 0 "#PWR01" H 8900 3650 50  0001 C CNN
@@ -527,7 +527,7 @@ F 3 "" H 8900 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L sensor_current-rescue:GND-power #PWR02
+L sensor_current-rescue:GND-power-sensor_current-rescue #PWR02
 U 1 1 5D3787E4
 P 8400 4200
 F 0 "#PWR02" H 8400 3950 50  0001 C CNN
@@ -556,7 +556,7 @@ NoConn ~ 10050 5100
 Wire Wire Line
 	9050 4200 9250 4200
 $Comp
-L sensor_current-rescue:SJ-3524-SMT-jack J3
+L sensor_current-rescue:SJ-3524-SMT-jack-sensor_current-rescue J3
 U 1 1 6040A716
 P 1000 1900
 F 0 "J3" H 1107 2367 50  0000 C CNN
@@ -585,7 +585,7 @@ VREF
 Wire Wire Line
 	4100 2350 4300 2350
 $Comp
-L sensor_current-rescue:AD8421-Amplifier_Instrumentation U2
+L sensor_current-rescue:AD8421-Amplifier_Instrumentation-sensor_current-rescue U2
 U 1 1 602A5CCD
 P 4000 2050
 F 0 "U2" H 4444 2096 50  0000 L CNN
@@ -621,7 +621,7 @@ A5
 Wire Notes Line
 	1950 3150 1950 5950
 $Comp
-L sensor_current-rescue:DIODE-pspice D2
+L sensor_current-rescue:DIODE-pspice-sensor_current-rescue D2
 U 1 1 602F1EF8
 P 8350 1750
 F 0 "D2" V 8304 1878 50  0000 L CNN
@@ -632,7 +632,7 @@ F 3 "~" H 8350 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L sensor_current-rescue:R_POT-Device RV1
+L sensor_current-rescue:R_POT-Device-sensor_current-rescue RV1
 U 1 1 602A5CBE
 P 3200 2000
 F 0 "RV1" H 3131 2046 50  0000 R CNN
@@ -644,7 +644,7 @@ F 3 "~" H 3200 2000 50  0001 C CNN
 $EndComp
 NoConn ~ 10300 4400
 $Comp
-L sensor_current-rescue:+3.3V-power #PWR0105
+L sensor_current-rescue:+3.3V-power-sensor_current-rescue #PWR0105
 U 1 1 604C3DB9
 P 5400 3650
 F 0 "#PWR0105" H 5400 3500 50  0001 C CNN
@@ -657,7 +657,7 @@ $EndComp
 Wire Wire Line
 	5400 3650 5400 3950
 $Comp
-L sensor_current-rescue:+3.3V-power #PWR0106
+L sensor_current-rescue:+3.3V-power-sensor_current-rescue #PWR0106
 U 1 1 604CD61E
 P 3600 4350
 F 0 "#PWR0106" H 3600 4200 50  0001 C CNN
@@ -672,7 +672,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 4400 3350 4400
 $Comp
-L sensor_current-rescue:+3.3V-power #PWR0107
+L sensor_current-rescue:+3.3V-power-sensor_current-rescue #PWR0107
 U 1 1 604DF341
 P 3900 1350
 F 0 "#PWR0107" H 3900 1200 50  0001 C CNN
@@ -818,4 +818,6 @@ Wire Wire Line
 	915  4035 985  4035
 Wire Wire Line
 	915  3775 980  3775
+Text Notes 915  3320 0    50   ~ 0
+Analog Inputs
 $EndSCHEMATC
