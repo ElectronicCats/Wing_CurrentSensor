@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Wing current sensor"
-Date "2021-03-05"
-Rev "1.0"
+Title "Wing_current_sensor"
+Date "2021-07-21"
+Rev "1.1"
 Comp "ElectronicCats"
-Comment1 "Janin Mizael Gonzalez Campos"
+Comment1 "Edgar Emmanuel Capuchino Escobedo"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -116,12 +116,6 @@ F 3 "~" H 9050 2350 50  0001 C CNN
 $EndComp
 Text Label 9800 2045 0    50   ~ 0
 OUT
-Wire Wire Line
-	9650 1450 9500 1450
-Wire Wire Line
-	9650 1200 9650 1450
-Wire Wire Line
-	9500 1200 9650 1200
 Connection ~ 9050 1450
 Wire Wire Line
 	9200 1450 9050 1450
@@ -187,34 +181,23 @@ Wire Wire Line
 	8350 1450 8350 1550
 Wire Wire Line
 	7800 1450 8350 1450
-Connection ~ 7050 1550
-Wire Wire Line
-	7250 1450 7500 1450
-Wire Wire Line
-	7250 1550 7250 1450
-Wire Wire Line
-	7050 1550 7250 1550
 $Comp
 L sensor_current-rescue:R-Device-sensor_current-rescue R3
 U 1 1 602F1EE8
-P 7650 1450
-F 0 "R3" H 7720 1496 50  0000 L CNN
-F 1 "10K" H 7720 1405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7580 1450 50  0001 C CNN
-F 3 "~" H 7650 1450 50  0001 C CNN
-	1    7650 1450
+P 7650 1445
+F 0 "R3" H 7720 1491 50  0000 L CNN
+F 1 "10K" H 7720 1400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7580 1445 50  0001 C CNN
+F 3 "~" H 7650 1445 50  0001 C CNN
+	1    7650 1445
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7050 1550 7050 1595
-Wire Wire Line
-	6950 1550 7050 1550
 $Comp
 L sensor_current-rescue:DIODE-pspice-sensor_current-rescue D1
 U 1 1 602F1EFE
 P 8050 1795
 F 0 "D1" V 8004 1923 50  0000 L CNN
-F 1 "DIODE" V 8095 1923 50  0000 L CNN
+F 1 "1N4148WS" V 7930 1890 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-323F" H 8050 1795 50  0001 C CNN
 F 3 "~" H 8050 1795 50  0001 C CNN
 	1    8050 1795
@@ -223,23 +206,16 @@ $EndComp
 $Comp
 L sensor_current-rescue:R-Device-sensor_current-rescue R1
 U 1 1 602F1F0A
-P 6800 1550
-F 0 "R1" H 6870 1596 50  0000 L CNN
-F 1 "10K" H 6870 1505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6730 1550 50  0001 C CNN
-F 3 "~" H 6800 1550 50  0001 C CNN
-	1    6800 1550
+P 6800 1445
+F 0 "R1" H 6870 1491 50  0000 L CNN
+F 1 "10K" H 6870 1400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6730 1445 50  0001 C CNN
+F 3 "~" H 6800 1445 50  0001 C CNN
+	1    6800 1445
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6500 1200 6500 1550
-Wire Wire Line
-	6500 1550 6650 1550
-Wire Wire Line
 	6400 1750 6500 1750
-Wire Wire Line
-	6500 1750 6500 1550
-Connection ~ 6500 1550
 Wire Wire Line
 	9750 2050 9800 2050
 Text Label 6400 1750 2    50   ~ 0
@@ -258,9 +234,6 @@ Wire Wire Line
 	9050 1950 9050 1450
 Wire Wire Line
 	9050 1950 9150 1950
-Wire Wire Line
-	9800 1450 9650 1450
-Connection ~ 9650 1450
 Wire Notes Line
 	11200 5950 11200 5900
 Wire Notes Line
@@ -625,7 +598,7 @@ L sensor_current-rescue:DIODE-pspice-sensor_current-rescue D2
 U 1 1 602F1EF8
 P 8350 1750
 F 0 "D2" V 8304 1878 50  0000 L CNN
-F 1 "DIODE" V 8395 1878 50  0000 L CNN
+F 1 "1N4148WS" V 8395 1878 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-323F" H 8350 1750 50  0001 C CNN
 F 3 "~" H 8350 1750 50  0001 C CNN
 	1    8350 1750
@@ -820,4 +793,25 @@ Wire Wire Line
 	915  3775 980  3775
 Text Notes 915  3320 0    50   ~ 0
 Analog Inputs
+Wire Wire Line
+	6500 1200 6500 1445
+Wire Wire Line
+	6650 1445 6500 1445
+Connection ~ 6500 1445
+Wire Wire Line
+	6500 1445 6500 1750
+Wire Wire Line
+	6950 1445 7050 1445
+Connection ~ 7050 1445
+Wire Wire Line
+	7050 1445 7500 1445
+Wire Wire Line
+	7050 1445 7050 1595
+Wire Wire Line
+	9800 1450 9800 1200
+Connection ~ 9800 1450
+Wire Wire Line
+	9500 1200 9800 1200
+Wire Wire Line
+	9500 1450 9800 1450
 $EndSCHEMATC
