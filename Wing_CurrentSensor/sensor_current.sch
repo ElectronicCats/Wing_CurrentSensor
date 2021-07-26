@@ -192,13 +192,13 @@ Wire Wire Line
 $Comp
 L sensor_current-rescue:R-Device-sensor_current-rescue R3
 U 1 1 602F1EE8
-P 7650 1445
-F 0 "R3" H 7720 1491 50  0000 L CNN
-F 1 "10K" H 7720 1400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7580 1445 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1811141124_FH-Guangdong-Fenghua-Advanced-Tech-RS-05K103JT_C115295.pdf" H 7650 1445 50  0001 C CNN
-F 4 "C115295" H 7650 1445 50  0001 C CNN "#LCSC"
-	1    7650 1445
+P 7650 1450
+F 0 "R3" H 7720 1496 50  0000 L CNN
+F 1 "10K" H 7720 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7580 1450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811141124_FH-Guangdong-Fenghua-Advanced-Tech-RS-05K103JT_C115295.pdf" H 7650 1450 50  0001 C CNN
+F 4 "C115295" H 7650 1450 50  0001 C CNN "#LCSC"
+	1    7650 1450
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -217,13 +217,13 @@ $EndComp
 $Comp
 L sensor_current-rescue:R-Device-sensor_current-rescue R1
 U 1 1 602F1F0A
-P 6800 1445
-F 0 "R1" H 6870 1491 50  0000 L CNN
-F 1 "10K" H 6870 1400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6730 1445 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1811141124_FH-Guangdong-Fenghua-Advanced-Tech-RS-05K103JT_C115295.pdf" H 6800 1445 50  0001 C CNN
-F 4 "C115295" H 6800 1445 50  0001 C CNN "#LCSC"
-	1    6800 1445
+P 6800 1450
+F 0 "R1" H 6870 1496 50  0000 L CNN
+F 1 "10K" H 6870 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6730 1450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811141124_FH-Guangdong-Fenghua-Advanced-Tech-RS-05K103JT_C115295.pdf" H 6800 1450 50  0001 C CNN
+F 4 "C115295" H 6800 1450 50  0001 C CNN "#LCSC"
+	1    6800 1450
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -815,19 +815,19 @@ Wire Wire Line
 Text Notes 915  3320 0    50   ~ 0
 Analog Inputs
 Wire Wire Line
-	6500 1200 6500 1445
+	6500 1200 6500 1450
 Wire Wire Line
-	6650 1445 6500 1445
-Connection ~ 6500 1445
+	6650 1450 6500 1450
+Connection ~ 6500 1450
 Wire Wire Line
-	6500 1445 6500 1750
+	6500 1450 6500 1750
 Wire Wire Line
-	6950 1445 7050 1445
-Connection ~ 7050 1445
+	6950 1450 7050 1450
+Connection ~ 7050 1450
 Wire Wire Line
-	7050 1445 7500 1445
+	7050 1450 7500 1450
 Wire Wire Line
-	7050 1445 7050 1595
+	7050 1450 7050 1595
 Wire Wire Line
 	9800 1450 9800 1200
 Connection ~ 9800 1450
